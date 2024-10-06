@@ -1,0 +1,184 @@
+/* General Styles for All Pages */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes up full height of viewport */
+}
+
+header {
+    background-color: black; /* Header color */
+    color: red;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation Bar Styling */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #333; /* Darker background for nav links */
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #4CAF50; /* Hover effect for nav links */
+}
+
+/* Main Content Styling */
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Make main content take up available space */
+}
+
+main h2 {
+    font-size: 24px;
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Styling Image Gallery */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    justify-content: space-between; /* Space out the images */
+}
+
+.image-gallery img {
+    width: calc(33% - 10px); /* Three images per row with space */
+    margin-bottom: 20px; /* Space between rows */
+    border: 5px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05); /* Zoom effect */
+    border-color: #4CAF50;
+}
+
+/* Styling Contact Form */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Styling the Friends List Section */
+#contactDetails {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contactDetails ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contactDetails li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#contactDetails a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contactDetails a:hover {
+    text-decoration: underline;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05); /* Zoom effect */
+    border-color: #4CAF50;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+footer p {
+    margin: 0;
+}
